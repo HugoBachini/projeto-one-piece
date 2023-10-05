@@ -1,6 +1,6 @@
 body{
     background-color: #000000;
-    overflow: hidden; /* esconde o que estiver transbordando, eliminando o scroll vertical */
+    overflow: hidden;
 }
 
 main::after{
@@ -8,13 +8,13 @@ main::after{
     position: fixed;
     top: 0;
     left: 0;
-    min-height: 100vh; /* viewport height */
-    width: 80vw; /*viewport width */
+    min-height: 100vh; 
+    width: 80vw;
     background: linear-gradient(-233deg, #000 40%, rgba(0, 0, 0, 0) 65%) no-repeat;
 }
 
 .personagem{
-    display: none; /* esconde os elementos selecionados */
+    display: none; 
     height: 100vh;
 }
 
@@ -25,7 +25,7 @@ main::after{
 .personagem .imagem{
     width: 100%;
     height: 100%;
-    object-fit: cover; /* mantém as dimensões da imagem cobrindo o elemento "personagem"; */
+    object-fit: cover;
 }
 
 .personagem .conteudo{
@@ -41,6 +41,14 @@ main::after{
     z-index: 1;
 }
 
+.conteudo .logo{
+    background-image: url("../imagens/one-piece-logo.png");
+    background-size: cover;
+    height: 100px;
+    width: 230px;
+    margin-bottom: 35px;
+}
+
 .conteudo .nome-personagem{
     color: #ffffff;
     font-size: 48px;
@@ -53,14 +61,6 @@ main::after{
     color: #ffffff;
     font-family: 'Rubik';
     line-height: 24px;
-}
-
-.conteudo .logo{
-    background-image: url("../imagens/one-piece-logo.png");
-    background-size: cover; /* Cobra toda área disponível */
-    height: 100px;
-    width: 230px;
-    margin-bottom: 35px;
 }
 
 .botoes{
